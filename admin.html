@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>admin</title> 
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body> 
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Generate Link</a></li>
+            <li><a href="#">Transaction History</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <div class='container'>
+        <div class='row'>
+
+          <div class='column-gambar'>
+            <div class='blue-column'>
+              <img id="gambar" src="macprom1.jpg" alt="GAMBAR">
+            </div>
+            <button id="btn-upload">Upload Picture</button>
+          </div>
+
+          <div class='coulmn-form'>
+            <div class='green-column'>
+              <table>
+                <tr>
+                    <!-- <td>Contoh</td>
+                    <td>:</td>
+                    <td>
+                        <span>Macbook Pro M1</span>
+                    </td>
+                </tr> -->
+                <tr>
+                    <br>
+                    <td>Title</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="title" id="title" value="MacBook Pro M1 E8000"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>:</td>
+                    <td>
+                        <textarea id="description" name="description" rows="6">
+Year:   2004
+
+Model:  
+
+Condition:  Mint
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="account_number" id="account_number" value="123-456-789-0"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bank</td>
+                    <td>:</td>
+                    <td>
+                        <select name="bank" id="bank">
+                            <option value="bca">HSBC</option>
+                            <option value="bca">BCA</option>
+                            <option value="bri">BRI</option>
+                            <option value="bni">BNI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Holder</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="account_holder" id="account_holder" value="Rizqi Rifah Amarulloh"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Transaction</td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" name="trx" id="trx" value="1"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        * If the transaction is for 3 person, choose 3 from the drop-down list
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="check_phone" name="check_phone" value="phone"/>
+                        <label style="color: blue;" for="check_phone"> Send to Mobile Phone</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="check_email" name="check_email" value="email"/>
+                        <label style="color: blue"; for="check_email"> Send to Email</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Send to Mobile Phone</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="input_phone" id="input_phone" value="1234567890, 1234567891"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Send to Email</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="input_email" id="input_email" value="abcd@gmail.com, rizqirifah.a@gmail.com"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button id="btn-submit">GENERATE NABR LINK</button>
+                    </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+</body> 
+
+</html>

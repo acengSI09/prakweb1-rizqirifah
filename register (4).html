@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Registrasi Praktikum</h1>
+
+    <form action="admin.html" method="post">
+        <fieldset style="background-color: blanchedalmond;">
+            <legend><b>Daftar Praktikum</b></legend>
+        <label for="">Nama :</label>
+        <input name="nama" value="nama" placeholder="masukan nama anda" type="text">
+        <br>
+        <br>
+        <label for="">Password</label>
+        <input type="password" id="myInput" placeholder="masukan password anda">
+        <input type="checkbox" onclick="myFunction()">Show Password
+        <br>
+        <br>
+        <label for="jk">Jenis Kelamin :</label>
+        <input type="radio" value="L" name="jk" for="jk">
+        <label for="jk">laki-laki</label>
+        <input type="radio" value="P" name="jk" for="jk">
+        <label for="jk">Perempuan</label>
+        <br>
+        <br>
+        <label for="">Foto :</label>
+        <input type="file">
+        <br>
+        <br>
+        <input type="submit" value="Simpan" name="Simpan" id="Simpan">
+    </fieldset>
+    </form>
+</body>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</html>

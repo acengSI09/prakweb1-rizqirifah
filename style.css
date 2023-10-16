@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 10px; */
+    height: 100%;
+}
+
+.ul {
+    margin: auto;
+    width: fit-content;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 10px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 75px;
+}
+
+.container {
+    margin: 0 auto;
+    /* height: 100%;
+    min-height: 100%; */
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    
+  }
+  
+  .column-gambar {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .coulmn-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    /* border: 1px solid; */
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  #title, #description, #account_number, #account_holder, #bank {
+    width: 50%;
+  }
+
+  #trx {
+    width: 8%;
+  }
+
+  #input_phone, #input_email{
+    width: 50%;
+  }
+
+  #gambar{
+    border: 1px solid;
+    width: 400px;
+    margin: 20px;
+  }
+
+  #btn-upload{
+    width: 30%;
+    margin: 25px;
+  }
+
+  #btn-submit {
+    margin: 30px;
+    background-color: rgb(89, 255, 0);
+  }
+  tr>td{
+    padding-bottom: 25px;
+  }
+  
+  /* .blue-column {
+    background-color: blue;
+    height: 100px;
+  }
+  
+  .green-column {
+      height: 100px;
+      background-color: green;
+  } */

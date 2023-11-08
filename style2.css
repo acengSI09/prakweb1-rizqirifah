@@ -1,0 +1,43 @@
+.yaa{
+    width: 1900px;
+    height: 140px;
+    background-color: greenyellow;
+    border-radius: 5em;
+    border-style: dashed;
+    margin-bottom: 10px;
+   
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kuning{
+    height: 140px;
+    width: 140px;
+    background-color: yellow;
+    margin-bottom: 10px;
+
+
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.oren{
+    height: 140px;
+    width: 1750px;
+    background-color: orange;
+    margin-bottom: 10px;
+
+}
+
+.biru{
+    height: 140px;
+    width: 1750px;
+    background-color:aqua;
+    margin-bottom: 10px;
+}

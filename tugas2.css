@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    background-color:cyan;
+    height: 25vh;
+    margin-left: 83px;
+}
+#main{
+    display: flex;
+}
+#main article{
+    flex: 1;
+    
+}
+#main nav,
+
+#main aside{
+    height: 50vh;
+}
+#main nav{
+    background-color: grey;
+    width: 14vw;
+    position: absolute;
+    left: 0px;
+    height: 100vh;
+    top: 0px;
+    
+}
+#main aside{
+    background-color: chocolate;
+    width: 14vw;
+    
+}
+article, header, footer{
+    display: flex;
+    justify-content: center;
+    
+}
+nav, aside{
+   text-align: center; 
+}
+p{
+    margin-top: 50px;
+    color: red
+}

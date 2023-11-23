@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    background-color:cyan;
+    height: 20vh;
+    width: 98vw;
+    position: absolute;
+    left: 10px;
+}
+#main{
+    display: flex;
+}
+#main article{
+    flex: 1;
+}
+
+
+#main aside{
+    background-color: grey;
+    width: 14vw;
+    position: absolute;
+    left: 10px;
+    height: 57vh;
+    margin-top: 130px;
+   
+    
+}
+
+footer{
+   margin-top: 30px;
+   
+}
+article{
+    text-align: center;
+}
+.gambar{
+    text-align: center;
+    margin-top: 270px;
+    
+}
+    

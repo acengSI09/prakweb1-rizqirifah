@@ -1,39 +1,40 @@
-header, footer{
-    background-color:cyan;
-    height: 18vh;
-    width: 98vw;
-    position: fixed;
-    left: 10px;
+body{
+    margin: 0%;
+    padding: 0%;
 }
-#main{
+img {
+    height: 25vh;
+}
+body {
+    background-color: grey;
+    text-align: center;
+}
+header, footer {
+    background-color: aqua;
+    height: 10vh;
+    line-height: 10vh;
+    margin: 20px;
+}
+main {
+    height: 70vh;
+    margin: 0 20px;
     display: flex;
 }
-#main article{
+aside {
+    background-color: burlywood;
     flex: 1;
+    margin-right: 20px;
 }
-
-
-#main aside{
-    background-color: grey;
-    width: 14vw;
-    position: absolute;
-    left: 10px;
-    height: 57vh;
-    margin-top: 130px;
-   
-    
-}
-
-footer{
-   margin-top: 30px;
-   
-}
-article{
+article {
+    background-color: rgb(114, 26, 26);
+    flex: 3;
     text-align: center;
 }
-.gambar{
-    text-align: center;
-    margin-top: 270px;
-    
+article .text {
+    height: 37vh;
 }
-    
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}

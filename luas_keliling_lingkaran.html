@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas dan Keliling Lingkaran</title>
+    <script>
+       
+        function hitungLuas(jariJari) {
+            return Math.PI * Math.pow(jariJari, 2);
+        }
+
+       
+        function hitungKeliling(jariJari) {
+            return 2 * Math.PI * jariJari;
+        }
+
+        
+        function hitung() {
+            
+            var jariJari = parseFloat(document.getElementById("jariJari").value);
+
+            
+            if (isNaN(jariJari) || jariJari <= 0) {
+                alert("Masukkan tidak valid. Panjang jari-jari harus merupakan angka positif.");
+            } else {
+        
+                var luas = hitungLuas(jariJari);
+                var keliling = hitungKeliling(jariJari);
+
+                
+                document.getElementById("hasilLuas").innerHTML = "Luas lingkaran dengan jari-jari " + jariJari + " adalah " + luas.toFixed(2);
+                document.getElementById("hasilKeliling").innerHTML = "Keliling lingkaran dengan jari-jari " + jariJari + " adalah " + keliling.toFixed(2);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Luas dan Keliling Lingkaran</h1>
+
+    <label for="jariJari">Masukkan panjang jari-jari lingkaran:</label>
+    <input type="number" id="jariJari">
+
+    <button onclick="hitung()">Hitung</button>
+
+    <div id="hasilLuas"></div>
+    <div id="hasilKeliling"></div>
+</body>
+</html>

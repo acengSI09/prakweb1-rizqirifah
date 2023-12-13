@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Nilai Dollar</title>
+    <script>
+        
+        function hitungNilaiDollar() {
+            
+            var uangRupiah = parseFloat(document.getElementById("uangRupiah").value);
+
+            
+            if (isNaN(uangRupiah) || uangRupiah <= 0) {
+                alert("Masukkan tidak valid. Jumlah uang harus merupakan angka positif.");
+            } else {
+                
+                var kursDollar = 16923;
+
+                
+                var nilaiDollar = uangRupiah / kursDollar;
+
+               
+                document.getElementById("hasilDollar").innerHTML = "Nilai dalam dollar: $" + nilaiDollar.toFixed(2);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Kurs Rupiah ke Dollar Euro</h1>
+
+    <label for="uangRupiah">Masukkan jumlah uang dalam rupiah:</label>
+    <input type="number" id="uangRupiah">
+
+    <button onclick="hitungNilaiDollar()">Hitung</button>
+
+    <div id="hasilDollar"></div>
+</body>
+</html>

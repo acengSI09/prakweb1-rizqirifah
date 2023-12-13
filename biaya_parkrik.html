@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Biaya Parkir</title>
+    <script>
+    
+        function hitungBiayaParkir() {
+            var jamMasuk = parseInt(document.getElementById("jamMasuk").value);
+            var jamKeluar = parseInt(document.getElementById("jamKeluar").value);
+
+            // Validasi input
+            if (isNaN(jamMasuk) || isNaN(jamKeluar) || jamMasuk < 0 || jamKeluar < 0 || jamMasuk > 24 || jamKeluar > 24 || jamMasuk >= jamKeluar) {
+                alert("Masukkan tidak valid. Pastikan jam masuk lebih kecil dari jam keluar dan berada dalam rentang 0-24.");
+            } else {
+                
+                var lamaParkir = jamKeluar - jamMasuk;
+                var biayaAwal = 3000; 
+                var biayaTambahan = 1000; 
+
+                if (lamaParkir <= 2) {
+                    var totalBiaya = biayaAwal;
+                } else {
+                    var totalBiaya = biayaAwal + biayaTambahan * (lamaParkir - 2);
+                }
+
+                document.getElementById("hasilBiayaParkir").innerHTML = "Biaya parkir untuk " + lamaParkir + " jam adalah " + totalBiaya + " rupiah.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Biaya Parkir</h1>
+
+    <label for="jamMasuk">Jam Masuk (0-24):</label>
+    <input type="number" id="jamMasuk" min="0" max="24">
+
+    <label for="jamKeluar">Jam Keluar (0-24):</label>
+    <input type="number" id="jamKeluar" min="0" max="24">
+
+    <button onclick="hitungBiayaParkir()">Hitung Biaya Parkir</button>
+
+    <div id="hasilBiayaParkir"></div>
+</body>
+</html>
